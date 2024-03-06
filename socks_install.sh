@@ -10,7 +10,7 @@ PASSWORD=$2
 finish() {
 cd $DIRECTORY
 echo "SOCKS " > check_file.cfg
-echo "Установка SOCKS5 успешно завершена! Ваша ссылка для подключения:\nhttps://t.me/socks?server=${IP}&port=1080&user=${LOGIN}&pass=${PASSWORD}"
+echo "¡La instalación de SOCKS5 se completó con éxito! Tu enlace de conexión:\nhttps://t.me/socks?server=${IP}&port=1080&user=${LOGIN}&pass=${PASSWORD}"
 }
 
 generate() {
@@ -64,7 +64,7 @@ install
 checkinstallation() {
 if [ -e $DIRECTORY/check_file.cfg ]; then
 if grep -q "SOCKS" check_file.cfg; then
-echo "SOCKS5 уже установлен на вашем сервере. Установка отменена (для сброса данных о установке введите команду: rm check_file.cfg)"
+echo "SOCKS5 ya está instalado en su servidor. Instalación cancelada (para restablecer los datos de instalación, ingrese el comando: rm check_file.cfg)"
 exit 1
 else
 if grep -q "MTProxy" check_file.cfg; then
