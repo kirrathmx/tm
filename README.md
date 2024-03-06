@@ -9,11 +9,12 @@ Simple and very fast installer for mtprotoproxy.
 If you want to install MTProxy, open 1443 port, if you want to install SOCKS5, open 1080 port.
 
 ## How to install MTProxy (user friendly)?
+https://raw.githubusercontent.com/kirrathmx/tm/main/autoinstall.sh
 
-1. `curl -s https://raw.githubusercontent.com/powermx/mt/main/autoinstall.sh | sh` and get your personal MTProxy.       
+1. `curl -s https://raw.githubusercontent.com/kirrathmx/tm/main/autoinstall.sh | sh` and get your personal MTProxy.       
 
 ### How to install (manual)?
-1. `git clone -b stable https://github.com/powermx/mt.git; cd mtproxy_autoinstaller`
+1. `git clone -b stable https://github.com/kirrathmx/tm.git; cd mtproxy_autoinstaller`
 2. `sudo chmod ugo+x install.sh && sudo chmod ugo+x socks_install.sh && sudo chmod ugo+x set_AD_TAG.sh`
 3. `./install.sh` (or `./socks_install.sh` if you want to install socks5 proxy)
 4. Just copy link and use your proxy!
