@@ -14,7 +14,7 @@ cd $DIRECTORY
 
 echo "MTProxy " > check_file.cfg
 
-echo "\nУстановка MTProxy успешно завершена! Ваша ссылка для подключения:\nhttps://t.me/proxy?server=${IP}&port=1443&secret=dd${SECRET}\n"
+echo "\n¡La instalación de MTProxy se completó con éxito! Tu enlace de conexión:\nhttps://t.me/proxy?server=${IP}&port=1443&secret=dd${SECRET}\n"
 
 exit 0
 }
@@ -31,7 +31,7 @@ fi
 
 if [ -z `echo $SECRET | grep -x '[[:xdigit:]]\{32\}'` ]; then
 
-    echo "Secret должен быть 32-значным ключом, содержащим только HEX-символы"
+    echo "El secreto debe ser una clave de 32 caracteres que contenga únicamente caracteres HEX."
 
 exit 1
 
@@ -86,7 +86,7 @@ install
 checkinstallation() {
 if [ -e $DIRECTORY/check_file.cfg ]; then
 if grep -q "MTProxy" check_file.cfg; then
-echo "MTProxy уже установлен на вашем сервере. Установка отменена (для сброса данных о установке введите команду: rm check_file.cfg)"
+echo "MTProxy ya está instalado en su servidor. Instalación cancelada (para restablecer los datos de instalación, ingrese el comando: rm check_file.cfg)"
 
 exit 1
 else
