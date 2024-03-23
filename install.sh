@@ -1,7 +1,5 @@
 #!/bin/sh
 
-sudo apt update -y
-
 ABSOLUTE_FILENAME=`readlink -e "$0"`
 DIRECTORY=`dirname "$ABSOLUTE_FILENAME"`
 IP=`wget -qO- ipv4.icanhazip.com`
