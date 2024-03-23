@@ -1,6 +1,6 @@
 #!/bin/sh
-
-sudo apt update && sudo apt install -y git
+echo '\tUPDATING'
+sudo apt update && sudo apt install -y git 1> /dev/null 2> /dev/null
 
 echo '\n--------------------------------------'
 echo '\tCLONING'
