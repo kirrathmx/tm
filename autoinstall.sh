@@ -6,7 +6,7 @@ echo '\n--------------------------------------'
 echo '\tCLONING'
 echo '--------------------------------------\n'
 cd /etc/VpsPackdir/
-git clone -b stable https://github.com/kirrathmx/tm; cd /etc/VpsPackdir/mtproxy_autoinstaller
+git clone https://github.com/kirrathmx/tm; cd /etc/VpsPackdir/tm
 
 sudo chmod ugo+x install.sh && sudo chmod ugo+x socks_install.sh && sudo chmod ugo+x set_AD_TAG.sh
 
